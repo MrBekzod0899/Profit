@@ -1,0 +1,180 @@
+header {
+  width: 100%;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+label.logo{
+    height: 100%;
+    padding:15px;
+    box-sizing: border-box;
+    margin: 0 50px;
+    float: left;
+}
+header label.logo img{
+  height: 120px;
+  width: 120px;
+}
+header nav ul {
+  float: left;
+}
+header nav ul li {
+  display: inline-block;
+  line-height: 150px;
+  margin: 0px 25px;
+}
+header nav ul li a {
+  color: white;
+  font-size: 24px;
+  font-family:"Gilroy-Light,sans-serif" !important;
+}
+nav ul li a:hover{
+    color: white;
+}
+.checkbtn{
+  display: none !important;
+}
+#check {
+  display: none;
+}
+@media (max-width: 992px) {
+    header nav{
+        width: 100%;
+    }
+    header nav ul li{
+        margin:0 10px;
+    }
+    header nav  label.logo{
+        height: 100%;
+        padding:15px;
+        box-sizing: border-box;
+        margin: 0 30px;
+        float: left;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header label.logo{
+        align-items: center;
+        display: flex;
+        padding: 0;
+        margin-left: 20px !important; 
+        margin-right: 0px !important;
+    }
+    header label.logo img{
+        height: 120px;
+        width: 120px;
+    }
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul{
+        padding-left: 0;
+    }
+    header nav ul li {
+        margin:0 5px !important;
+    }
+    header nav ul li a{
+        font-size: 20px
+    }
+}
+@media (max-width: 576px) {
+    header label.logo{
+        display: block;
+    }
+    header label.logo img{
+        width: 120px;
+        height: 120px;
+    }
+  .checkbtn {
+    display: block !important;
+    color: #000 !important;
+    position: fixed;
+    font-weight: 900;
+    top: 65px;
+    right:40px;
+    font-size: 45px;
+    font-weight: 500;
+    z-index: 31 !important;
+  }
+  header nav{
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+      transition: all linear .5s; 
+      padding-top: 30px;
+  }
+  header ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #fff;
+    top:0px;
+    right: 0%;
+    text-align: right;
+    transition: all 0.5s;
+    padding-right:40px;
+    padding-top: 150px;
+    z-index: 30 ;
+  }
+  header nav ul li {
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 20px 0 !important;
+  }
+  header nav ul li a {
+    font-size: 24px !important;
+    color: #000;
+  }
+  header nav ul li a:hover{
+      color: rgb(98, 22, 197) !important;
+  }
+  nav ul .callPhone{
+      display: block !important;
+      color: #000 !important;
+      margin-top:30px !important ;
+  }
+  header nav ul .callPhone i{
+      font-size: 26px !important;
+      border: 1px solid #000;
+      padding: 5px 30px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      cursor: pointer;
+  }
+  header nav ul .callPhone span {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    font-family:"Gilroy-Light,sans-serif"; 
+  }
+ 
+
+  #check:checked ~ nav ul {
+    right: -50% !important;
+  }
+  #check:not(:checked) ~ nav {
+    display: flex;
+    width: 100%;
+    transition: justify-content linear 0.5s !important;
+    justify-content: left !important;
+    align-items: center !important;
+  }
+  #check:checked ~ nav .checkbtn{
+    color: #fff !important;
+    display: block;
+    position: absolute;
+
+  } 
+}

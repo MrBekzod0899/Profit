@@ -1,0 +1,117 @@
+.Work .row {
+    width: 85% !important;
+    margin: 0 auto;
+    border: 1px solid rgb(77,76,102);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Work .row .col-lg-6{
+    padding-left: 30px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center !important;
+    font-size: 24px;
+    font-family:'Gilroy-Light';
+    font-weight: 600;
+}
+.Work .row .col-lg-6:nth-last-of-type(odd){
+    padding-left: 50px;
+}
+.Work .row .col-lg-6 .left{
+   margin-right: 40px;
+}
+.Work .row .col-lg-6 .left span{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.Work .row .col-lg-6 .left span svg{
+   width: 47px ;
+   height: 47px;
+   font-style: bold;
+}
+.Work .row .col-lg-6 .left span:hover{
+    cursor: pointer;
+}
+.Work .row .col-lg-6 .right{
+    padding-top: 15px;
+    width: 100%;
+}
+.Work .row .col-lg-6 .right p{
+    font-size: 24px;
+    font-family:'Gilroy-Light,san-serif';
+}
+
+@media (max-width:992px) {
+    .Work .row .col-lg-6 .left{
+        margin-right: 20px;
+     }
+    .Work .row .col-lg-6 .right p{
+        font-size: 20px;
+        font-family:'Gilroy-Light,san-serif';
+    }
+    .Work .row .col-lg-6 .left span svg{
+        width: 36px !important;
+        height: 36px !important;
+     }
+}
+@media (max-width:768px) {
+    .Work .row .col-lg-6:nth-last-of-type(odd){
+        padding-left: 10px !important;
+    }
+    .Work .row .col-lg-6 .left{
+        margin-right: 10px;
+     }
+    .Work .row .col-lg-6 .right p{
+        font-size: 16px !important;
+        font-family:'Gilroy-Light,san-serif';
+    }
+    .Work .row .col-lg-6 .left span svg{
+        width: 26px !important;
+        height: 26px !important;
+     }
+}
+@media (max-width:576px) {
+    .Work .row {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .Work .row .col-lg-6{
+        padding-left: 10px !important;
+        margin: 10px;
+    }
+    .Work .row .col-lg-6 .right p{
+        font-size: 24px !important;
+        font-family:'Gilroy-Light,san-serif';
+    }
+    .Work .row .col-lg-6 .left span svg{
+        width: 36px !important;
+        height: 36px !important;
+     }
+}
+
+
+@media (max-width:376px) {
+    .Work .row {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .Work .row .col-lg-6{
+        padding-left: 10px !important;
+        margin: 10px;
+    }
+    .Work .row .col-lg-6 .right p{
+        font-size: 16px !important;
+        font-family:'Gilroy-Light,san-serif';
+    }
+    .Work .row .col-lg-6 .left span svg{
+        width: 26px !important;
+        height: 26px !important;
+     }
+}

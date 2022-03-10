@@ -1,0 +1,47 @@
+#Услуги{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.637) 0%, rgba(0, 0, 0, 0.507) 80%,#4B2CB1 100%)
+}
+.row{
+    width: 90% !important;
+    margin: 20px auto !important;
+}
+.service .row .col-xl-4{
+    padding: 30px;
+    box-sizing: border-box;  
+}
+
+.service .row .col-xl-4 .card{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid rgb(77,76,102);
+    min-height: 240px;
+    display: flex;
+    align-items: center !important;
+    justify-content:center !important;
+    box-sizing: border-box;
+}
+.service .row .col-xl-4 .card .card-title{
+    width: 70%;
+    margin: 0 auto;
+    padding:0 30px;
+}
+.service .row .col-xl-4 .card .card-title h4{
+    font-size:30px !important;
+    font-family:"Gilroy-Light";
+    font-weight: 600;
+}
+.service .row .col-xl-4 .card .card-content{
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+}
+.service .row .col-xl-4 .card .card-content button{
+    width: 50%;
+    margin: 0 auto;
+    padding: 8px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 500
+}
