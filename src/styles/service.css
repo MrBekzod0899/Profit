@@ -1,7 +1,7 @@
-#Услуги{
-    background: #E5E5E5;
-    background: linear-gradient(180deg, #131A15 0%, #090B3A 100%);
-}
+/* #Услуги{
+  
+    
+} */
 .row{
     width: 90% !important;
     margin: 20px auto !important;
@@ -10,20 +10,22 @@
     padding: 30px;
     box-sizing: border-box;  
 }
+
 .service .row .col-xl-4 .card{
+    overflow: hidden;
     color: #fff;
-    background-color: transparent;
-    border: 1px solid rgb(77,76,102);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    background: linear-gradient(-45deg,transparent 45px, rgba(255, 255, 255, 0.1) 0) bottom left;    
     min-height: 240px;
     display: flex;
     align-items: center !important;
     justify-content:center !important;
     box-sizing: border-box;
-}
-.service .row .col-xl-4 .card .card-title{
-    width: 70%;
-    margin: 0 auto;
-    padding:0 30px;
+    padding-bottom: 10px;
+    padding-left: 10%;
+    border: none;
+    
+
 }
 .service .row .col-xl-4 .card .card-title h4{
     font-size:30px !important;
@@ -36,8 +38,7 @@
     display: flex;
 }
 .service .row .col-xl-4 .card .card-content button{
-    width: 50%;
-    margin: 0 auto;
+    width: 70%;
     padding: 8px 0;
     box-sizing: border-box;
     border-radius: 20px;
@@ -56,7 +57,7 @@
     }
     .service .row .col-xl-4 .card .card-title{
         width: 100% !important;
-        padding:10px 0 0 40px;
+        padding: 0 !important;
     }
     .service .row .col-xl-4 .card .card-title h4{
         font-size:30px !important;
@@ -66,7 +67,6 @@
     .service .row .col-xl-4 .card .card-content button{
         font-size: 16px;
         line-height: 18px;
-        width: 70%;
         padding: 15px 20px;
     }
 }
@@ -75,12 +75,17 @@
         width: 90% !important;
         margin: 20px auto !important;
     }
+    .service .row .col-xl-4{
+        padding: 20px;
+    }
     .service .row .col-xl-4 .card{
         min-height: 200px;
+        width: 100%;
+        padding-left: 10% !important;
+        box-sizing: border-box;
     }
     .service .row .col-xl-4 .card .card-title{
         width: 100% !important;
-        padding:10px 0 0 25px;
     }
     .service .row .col-xl-4 .card .card-title h4{
         font-size:26px !important;
@@ -91,27 +96,19 @@
         font-size: 14px;
         line-height: 14px;
         width: 70%;
-        padding: 10px 15px;
     }
 }
 @media (max-width:768px) {
-    .service .row .col-xl-4{
-        padding: 10px;
-    }
-    .service .row .col-xl-4 .card{
-        min-height: 150px;
-    }
     .row{
         width: 90% !important;
         margin: 20px auto !important;
     }
     .service .row .col-xl-4{
-        padding: 10px 15px;
+        padding: 10px 10px;
         box-sizing: border-box;  
     }
-    .service .row .col-xl-4 .card .card-title{
-        width: 100% !important;
-        padding:10px 0 0 20px;
+    .service .row .col-xl-4 .card{
+        min-height: 180px;
     }
     .service .row .col-xl-4 .card .card-title h4{
         font-size:18px !important;
@@ -119,44 +116,40 @@
     }
     .service .row .col-xl-4 .card .card-content button{
         font-size: 10px;
-        line-height: 14px;
+        line-height: 10px;
+        padding: 12px;
         width: 70%;
     }
 }
-@media (max-width:576px) {
+@media (max-width:576px) { 
     #Услуги .titleHeader{
         font-size:50px ;
     } 
     .service .row{
         width: 90% !important;
         padding: 0 auto;
-     }
-    .service .row .col-xl-4 .card .card-title{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0px 30px 0 30px;
     }
-    .service .row .col-xl-4 .card .card-title h4{
-        font-size:40px !important;
-    }
-    .service .row .col-xl-4 .card .card-content button{
-        width: 70%;
-        margin-left: 10%;
-        margin-right: 0;
-        font-size: 21px;
-    }
-   
     .service .row .carousel-inner{
         padding: 40px !important;
         box-sizing: border-box;
     }
-
-   #carouselExampleControls .carousel-icon i {
-        font-size: 35px ;
-        font-weight:700 ;
-        color: white ;
+    
+    .service .row .col-xl-4 .card{
+        min-height: 220px;
+        padding: 10px;
+        padding-left:10%;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%) !important;
     }
 
+    .service .row .col-xl-4 .card .card-title h4{
+        font-size:34px !important;
+    }
+    .service .row .col-xl-4 .card .card-content button{
+        width: 70%;
+        padding: 15px 5px;
+        font-size: 21px;
+    }
+   
     #carouselExampleControls .carousel-icon i {
         font-size: 35px ;
         font-weight:700 ;
@@ -171,21 +164,24 @@
     }
     #Услуги .titleHeader{
         font-size:40px ;
+    }
+    .service .row .carousel-inner{
+        padding: 30px !important;
+        box-sizing: border-box;
+    }
+    .service .row .col-xl-4 .card{
+        padding-left:10%;
+        box-sizing: border-box;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%) !important;
+    }
 
-    }
-    .service .row .col-xl-4 .card .card-title{
-        width: 100%;
-        margin: 0 auto;
-        padding: 0px 0 0 30px;
-    }
     .service .row .col-xl-4 .card .card-title h4{
-        font-size:26px !important;
+        font-size:24px !important;
     }
     .service .row .col-xl-4 .card .card-content button{
         width: 70%;
-        margin-left: 10%;
-        margin-right: 0;
-        font-size: 18px;
+        font-size: 14px;
+        padding: 10px 8px;
     }
     .service .row{
        width: 100% !important;
@@ -195,9 +191,24 @@
         padding: 20px;
         box-sizing: border-box;
     }
-   #carouselExampleControls .carousel-icon i {
-        font-size: 35px ;
-        font-weight:700 ;
-        color: white ;
+ 
+}
+@media (max-width:300px) {
+    .service .row .carousel-inner{
+        padding: 20px !important;
+        box-sizing: border-box;
     }
+    .service .row .col-xl-4 .card{
+        padding: 0;
+        padding-left: 5% !important;
+        min-height: 180px;
+    }
+    .service .row .col-xl-4 .card .card-title h4{
+        font-size:20px !important;
+    }
+    .service .row .col-xl-4 .card .card-content button{
+        width: 80%;
+        font-size: 12px;
+        padding: 8px 8px;
+    } 
 }
