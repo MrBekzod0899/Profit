@@ -14,7 +14,7 @@ export default function Service() {
             </div>
             {size > 576 ?
                 <div className="row">
-                    <div className="  col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className="  col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
                         <div className="card">
                             <div className="card-title">
                                 <h4>Разработка сайтов</h4>
@@ -24,7 +24,7 @@ export default function Service() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
                         <div className="card">
                             <div className="card-title">
                                 <h4>Мобильные приложения</h4>
@@ -34,7 +34,7 @@ export default function Service() {
                             </div>
                         </div>
                     </div>
-                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
                         <div className="card">
                             <div className="card-title">
                                 <h4>Маркетинг продвижение</h4>
@@ -44,7 +44,7 @@ export default function Service() {
                             </div>
                         </div>
                     </div>
-                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
                         <div className="card">
                             <div className="card-title">
                                 <h4>SMM-продвижение</h4>
@@ -54,7 +54,7 @@ export default function Service() {
                             </div>
                         </div>
                     </div>
-                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12 ">
                         <div className="card">
                             <div className="card-title">
                                 <h4>SEO-оптимизация</h4>
@@ -64,7 +64,7 @@ export default function Service() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-12">
+                    <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
                         <div className="card">
                             <div className="card-title">
                                 <h4>Брендинг и айдентика </h4>
