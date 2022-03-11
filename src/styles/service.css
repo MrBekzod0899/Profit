@@ -1,14 +1,23 @@
-/* #Услуги{
-  
-    
-} */
-.row{
-    width: 90% !important;
-    margin: 20px auto !important;
+.service{
+    position: relative;
 }
 .service .row .col-xl-4{
     padding: 30px;
     box-sizing: border-box;  
+}
+.service::after{
+    position: absolute;
+    content:'';
+    top: -90px;
+    right:0;
+    width: 100%;
+    height: 100px;
+    background: #1e1b3f;
+    filter: blur(25px);
+}
+.service .row{
+    width: 90% !important;
+    margin: 20px auto !important;
 }
 
 .service .row .col-xl-4 .card{

@@ -1,9 +1,9 @@
 .main{
     min-height: 500px;
     margin-top: 0;
-    margin-bottom: 50px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding-bottom: 50px; 
 }
+
 .main .row{
     margin: 0 !important;
     padding:0 30px;

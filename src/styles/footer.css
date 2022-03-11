@@ -3,6 +3,7 @@ footer{
     box-sizing: border-box;
     padding: 40px;
     background: linear-gradient(180deg, #131A15 0%, #090B3A 100%);
+    position: relative;
 }
 footer ul{
     width: 60%;
@@ -19,4 +20,24 @@ footer ul li a{
 footer ul li a:hover{
     color: #7c7c81;
 }
+footer::after{
+    bottom: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    background-color: #5A4DB7;
+    filter: blur(70px);
+}
 
+footer::before{
+    bottom: 0;
+    right: 0;
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    background-color: #5A4DB7;
+    filter: blur(90px);
+}

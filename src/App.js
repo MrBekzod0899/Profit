@@ -10,8 +10,10 @@ import Work from './components/Work';
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
+      <div className='main-content'>
+        <Header/>
+        <Main/>
+      </div>
       <div className='wrap'>
         <Service/>
         <Work/>
