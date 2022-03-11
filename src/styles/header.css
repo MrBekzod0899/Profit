@@ -4,6 +4,7 @@ header {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+ 
 }
 
 header nav {
@@ -106,6 +107,7 @@ nav ul li a:hover{
     font-size: 45px;
     font-weight: 500;
     z-index: 31 !important;
+    cursor: pointer;
   }
   header nav{
       display: flex;
@@ -126,6 +128,9 @@ nav ul li a:hover{
     padding-right:40px;
     padding-top: 150px;
     z-index: 30 ;
+  }
+  header nav ul li:active ~ nav{
+      display: none;
   }
   header nav ul li {
     display: block;

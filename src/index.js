@@ -5,7 +5,7 @@ import App from './App';
 import './fonts/Gilroy-Light.otf';
 import './fonts/Gilroy-ExtraBold.otf'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.render(
   <React.StrictMode>

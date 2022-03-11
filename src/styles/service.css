@@ -1,5 +1,6 @@
 #Услуги{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.637) 0%, rgba(0, 0, 0, 0.507) 80%,#4B2CB1 100%)
+    background: #E5E5E5;
+    background: linear-gradient(180deg, #131A15 0%, #090B3A 100%);
 }
 .row{
     width: 90% !important;
@@ -9,7 +10,6 @@
     padding: 30px;
     box-sizing: border-box;  
 }
-
 .service .row .col-xl-4 .card{
     color: #fff;
     background-color: transparent;
@@ -44,4 +44,74 @@
     background-color: #fff;
     color: #000;
     font-weight: 500
+}
+
+@media (max-width:576px) {
+    #Услуги .titleHeader{
+        font-size:50px ;
+    }
+    .service .row .col-xl-4 .card .card-title{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0 0 30px;
+    }
+    .service .row .col-xl-4 .card .card-title h4{
+        font-size:40px !important;
+    }
+    .service .row .col-xl-4 .card .card-content button{
+        width: 70%;
+        margin-left: 10%;
+        margin-right: 0;
+        font-size: 21px;
+    }
+    .service .row{
+       width: 100% !important;
+       margin: 0 auto;
+    }
+    .service .row .carousel-inner{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+   #carouselExampleControls .carousel-icon i {
+        font-size: 35px ;
+        font-weight:700 ;
+        color: white ;
+    }
+}
+
+@media (max-width:400px) {
+    #Услуги{
+        width: 100%;
+    }
+    #Услуги .titleHeader{
+        font-size:40px ;
+
+    }
+    .service .row .col-xl-4 .card .card-title{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0 0 30px;
+    }
+    .service .row .col-xl-4 .card .card-title h4{
+        font-size:26px !important;
+    }
+    .service .row .col-xl-4 .card .card-content button{
+        width: 70%;
+        margin-left: 10%;
+        margin-right: 0;
+        font-size: 18px;
+    }
+    .service .row{
+       width: 100% !important;
+       margin: 0 auto;
+    }
+    .service .row .carousel-inner{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+   #carouselExampleControls .carousel-icon i {
+        font-size: 35px ;
+        font-weight:700 ;
+        color: white ;
+    }
 }

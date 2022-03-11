@@ -2,7 +2,7 @@
     min-height: 500px;
     margin-top: 0;
     margin-bottom: 50px;
-    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .main .row{
     margin: 0 !important;
@@ -56,7 +56,7 @@
     background: url(../asset/bg2.png) no-repeat;
     height: 100%;  
     width: 110%;
-    transform: rotate(-24deg);
+    transform: rotate(-18deg);
     background-size: contain;
 }
 .main .row .col-lg-5 .bgImage:last-child{
@@ -73,4 +73,97 @@
     background: url(../asset/phone2.png) no-repeat;
     background-size: contain;
     transform: rotate(10deg);
+}
+
+
+@media (max-width:576px){
+  
+    .main .row{
+        padding:10px;
+        position: relative;
+    }
+    .main .row .col-lg-7{
+        width: 100% !important;
+    }
+    .main .row .col-lg-7 .title{
+        width: 100% !important;
+    }
+    .main .row .col-lg-7 .title h1{
+        font-size: 40px !important;
+        margin-bottom: 40px;
+    }
+    .main .row .col-lg-7 .title p{
+        font-size: 24px;
+        width: 97%;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .main .row .col-lg-7  button{
+        position: absolute;
+        width: 90%;
+        margin-left:5%;
+        display: block;
+        border-radius: 40px;
+        padding: 24px 40px;
+        font-size: 22px;
+        bottom: -40px;
+        left: 0;
+    }
+      .main .row .col-lg-5{
+        height: 400px !important;
+        margin-bottom: 40px;
+        margin: 20px 0;
+    }
+    .main .row .col-lg-5 .bgImage{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .main .row .col-lg-5 .bgImage:first-child .Image1{
+        top: 5px;
+        left: 60px;
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+    .main .row .col-lg-5 .bgImage:last-child .Image2{
+        top: 15px;
+        left: -40px;
+        width: 85%;
+        height: 85%;
+        z-index: 12;
+    }
+    
+}
+
+@media (max-width:400px){
+    .main .row .col-lg-7 .title h1{
+        font-size: 30px !important;
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0;
+        
+    }
+    .main .row .col-lg-7 .title p{
+        font-size: 18px;
+        width: 97%;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .main .row .col-lg-7  button{
+        position: absolute;
+        width: 90%;
+        margin-left:5%;
+        display: block;
+        border-radius: 30px;
+        padding: 15px 20px;
+        font-size: 20px;
+        bottom: -40px;
+        left: 0;
+    }
+    .main .row .col-lg-5{
+        height: 300px !important;
+    }
 }
