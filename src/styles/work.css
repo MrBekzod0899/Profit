@@ -77,7 +77,7 @@
 }
 @media (max-width:576px) {
     .Work .row {
-        width: 100% !important;
+        width: 90% !important;
         margin: 0 auto;
         padding: 20px;
     }

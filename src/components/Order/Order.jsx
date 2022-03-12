@@ -76,7 +76,7 @@ export default function Order() {
                 <div className="col-xl-4 col-md-4 col-lg-4 col-sm-4 col-12">
                     {
                         recieve &&
-                        <div className="card">
+                        <div className="card" style={{transition:'all linear 0.5s'}}>
                             <div className="card-title">
                                 <h4>Получить
                                     бесплатную
@@ -94,7 +94,7 @@ export default function Order() {
                     }
                     {
                         send &&
-                        <div  className="card send" >
+                        <div  className="card send" style={{transition:'all linear 0.5s'}}>
                             <div className="card-action">
                                 <input 
                                     id='name'
@@ -139,7 +139,7 @@ export default function Order() {
                         </div>
                     }
                     {!recieve && !send &&
-                        <div className="card iconCard">
+                        <div className="card iconCard" style={{transition:'all linear 0.5s'}}>
                             <div className="cardHeader text-center">
                                 <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="37.5" cy="37.5" r="37.5" fill="#2ECC71" />

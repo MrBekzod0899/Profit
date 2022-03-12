@@ -23,11 +23,20 @@ body .wrap{
   padding: 40px 0;
   background-color: #4F4AB2;
   background: linear-gradient(to bottom right,#1e1b3f 30% , #4B2CB1  50%,#4F4AB2) !important;
+  
 }
 body .main-content{
-  background: linear-gradient(#5A4DB7 70%,#1e1b3f);  
+  background: linear-gradient(#5A4DB7 70%,#1e1b3f);
+  padding-bottom:60px !important;
+
 }
 body a{
   text-decoration: none;
   color: white;
+}
+
+@media (max-width:576px) {
+  body .wrap{
+    border-top: 3px dashed #999;
+  }
 }
