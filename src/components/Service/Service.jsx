@@ -1,3 +1,4 @@
+import Aos from 'aos';
 import React, { useEffect, useState } from 'react'
 import '../../styles/service.css'
 
@@ -7,6 +8,15 @@ export default function Service() {
     const size = useWindowSize();
     console.log(size)
 
+    useEffect(()=>{
+        Aos.init({
+            duration:500,
+            offset:300,
+            easing:"ease-in-sine",
+            once:true
+        })
+    })
+
     return (
         <div id='Услуги' className='service container-fluid'>
             <div className="w-100 d-flex justify-content-center py-3 ">
@@ -14,8 +24,8 @@ export default function Service() {
             </div>
             {size > 576 ?
                 <div className="row">
-                    <div className="  col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
-                        <div className="card">
+                    <div  className="col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
+                        <div data-aos="fade-up-right" className="card">
                             <div className="card-title">
                                 <h4>Разработка сайтов</h4>
                             </div>
@@ -25,7 +35,7 @@ export default function Service() {
                         </div>
                     </div>
                     <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
-                        <div className="card">
+                        <div data-aos="fade-up" className="card">
                             <div className="card-title">
                                 <h4>Мобильные приложения</h4>
                             </div>
@@ -35,7 +45,7 @@ export default function Service() {
                         </div>
                     </div>
                     <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
-                        <div className="card">
+                        <div data-aos="fade-up-left" className="card">
                             <div className="card-title">
                                 <h4>Маркетинг продвижение</h4>
                             </div>
@@ -45,7 +55,7 @@ export default function Service() {
                         </div>
                     </div>
                     <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
-                        <div className="card">
+                        <div data-aos="fade-down-right" className="card">
                             <div className="card-title">
                                 <h4>SMM-продвижение</h4>
                             </div>
@@ -55,7 +65,7 @@ export default function Service() {
                         </div>
                     </div>
                     <div className=" col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12 ">
-                        <div className="card">
+                        <div data-aos="fade-down" className="card">
                             <div className="card-title">
                                 <h4>SEO-оптимизация</h4>
                             </div>
@@ -65,7 +75,7 @@ export default function Service() {
                         </div>
                     </div>
                     <div className="col-xl-4 xol-lg-4 col-md-4 col-sm-4 col-12">
-                        <div className="card">
+                        <div data-aos="fade-down-left" className="card">
                             <div className="card-title">
                                 <h4>Брендинг и айдентика </h4>
                             </div>

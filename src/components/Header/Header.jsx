@@ -3,9 +3,11 @@ import logo from '../../asset/logo.png'
 import '../../styles/header.css'
 
 const Header = () => {
+    console.log(document.querySelectorAll('navigation-item li a'))
+
     return (
         <header className="header">
-             <input type="checkbox" id="check" defaultChecked='true'/>
+                    <input type="checkbox" id="check" defaultChecked='true'/>
             <nav>
                     <label htmlFor="check" className="checkbtn">
                             <i className="fas fa-bars"></i>

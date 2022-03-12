@@ -35,9 +35,26 @@ header nav ul li a {
   color: white;
   font-size: 24px;
   font-family:"Gilroy-Light,sans-serif" !important;
+  position: relative;
+}
+header nav ul li a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 4px;
+  top: -5px;
+  left: 50%;
+  background-color: #1F91F9;
+  border-radius: 3px;
+  transition: all linear 0.3s;
 }
 nav ul li a:hover{
-    color: white;
+    color: #1F91F9 !important;
+    width: 100%;
+}
+nav ul li a:hover::after{
+  width: 100%;
+  left: 0;
 }
 .checkbtn{
   display: none !important;
@@ -164,7 +181,6 @@ nav ul li a:hover{
     font-family:"Gilroy-Light,sans-serif"; 
   }
  
-
   #check:checked ~ nav ul {
     right: -50% !important;
   }

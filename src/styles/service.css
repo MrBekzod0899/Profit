@@ -1,5 +1,9 @@
 .service{
     position: relative;
+   
+}
+.service .row {
+    overflow:hidden ;
 }
 .service .row .col-xl-4{
     padding: 30px;
@@ -32,10 +36,10 @@
     box-sizing: border-box;
     padding-bottom: 10px;
     padding-left: 10%;
+    overflow: hidden;
     border: none;
-    
-
 }
+
 .service .row .col-xl-4 .card .card-title h4{
     font-size:30px !important;
     font-family:"Gilroy-Light";
@@ -80,6 +84,9 @@
     }
 }
 @media (max-width:992px) {
+    .service::after{
+       display: none;
+    }
     .row{
         width: 90% !important;
         margin: 20px auto !important;
@@ -147,8 +154,10 @@
         min-height: 280px;
         padding: 10px;
         padding-left:10%;
+        border: 2px solid #fff;
         background: linear-gradient(-45deg,transparent 40px, rgba(255, 255, 255, 0.1) 0) bottom left;    
     }
+   
 
     .service .row .col-xl-4 .card .card-title h4{
         font-size:42px !important;

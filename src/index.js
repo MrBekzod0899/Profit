@@ -6,6 +6,7 @@ import './fonts/Gilroy-Light.otf';
 import './fonts/Gilroy-ExtraBold.otf'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-toastify/dist/ReactToastify.css';
+import 'aos/dist/aos.css'
 
 ReactDOM.render(
   <React.StrictMode>

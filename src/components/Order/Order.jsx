@@ -1,7 +1,6 @@
-import React, { useRef, useState } from 'react'
+import React, {useRef, useState } from 'react'
 import '../../styles/order.css'
 import { ToastContainer, toast } from 'react-toastify';
-
 
 export default function Order() {
     const [recieve, setRecieve] = useState(true);
@@ -10,6 +9,8 @@ export default function Order() {
     const [phone, setPhone] = useState('');
     const [interest, setInterest] = useState('');
     const ServiceRef = useRef()
+
+  
 
     const handleRecieve = () => {
         setSend(true)
@@ -52,7 +53,7 @@ export default function Order() {
     return (
         <div id='Заказать' className='Order container-fluid'>
             <ToastContainer
-                autoClose={2000}
+                autoClose={1500}
             />
             <div className="row">
                 <div className="col-xl-8 col-md-8 col-lg-8 col-sm-7 col-12">
