@@ -1,6 +1,5 @@
 .service{
     position: relative;
-   
 }
 .service .row {
     overflow:hidden ;
@@ -37,7 +36,7 @@
     padding-bottom: 10px;
     padding-left: 10%;
     overflow: hidden;
-    border: none;
+    border: none !important;
 }
 
 .service .row .col-xl-4 .card .card-title h4{
@@ -154,8 +153,8 @@
         min-height: 280px;
         padding: 10px;
         padding-left:10%;
-        border: 2px solid #fff;
-        background: linear-gradient(-45deg,transparent 40px, rgba(255, 255, 255, 0.1) 0) bottom left;    
+        background: linear-gradient(-45deg,transparent 40px, rgba(255, 255, 255, 0.1) 0) bottom left;
+        border: none !important;       
     }
    
 

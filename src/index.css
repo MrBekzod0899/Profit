@@ -49,11 +49,11 @@ body .main-content{
   body .main-content::before{
     content: '';
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 20%;
     top: -10%;
     right: 0;
-    filter: blur(120px);
+    filter: blur(50px);
     background-color: #1e1845;
     z-index: 1 !important;
   }
