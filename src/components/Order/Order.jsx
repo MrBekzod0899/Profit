@@ -1,4 +1,4 @@
-import React, {useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import '../../styles/order.css'
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -10,7 +10,7 @@ export default function Order() {
     const [interest, setInterest] = useState('');
     const ServiceRef = useRef()
 
-  
+
 
     const handleRecieve = () => {
         setSend(true)
@@ -73,27 +73,48 @@ export default function Order() {
                         </p>
                     </div>
                 </div>
-                <div className="col-xl-4 col-md-4 col-lg-4 col-sm-5 col-12">
-                    {
-                        recieve &&
-                        <div className="card" style={{ transition: 'all linear 0.5s' }}>
-                            <div className="card-title">
-                                <h4>Получить
-                                    бесплатную
-                                    консультацию
-                                </h4>
+                {
+                    recieve &&
+                    <>
+                       <div className="cardMinimum8 d-none col-xl-8 col-md-8 col-lg-8 col-sm-7 col-12">
+                            <div className='orderTitle'>
+                                <h3>Сколько стоят услуги</h3>
                             </div>
-                            <div className="card-content">
-                                В рамках консультации уточним необходимую информацию
-                                для анализа вашего проекта
-                            </div>
-                            <div className="card-action">
-                                <button className='btn w-100 btn-light' onClick={handleRecieve}>Получить</button>
+                            <div className="orderContent">
+                                <p>
+                                    Цена рассчитывается индивидуально
+                                    в зависимости отсложности, объема
+                                    и сроков работы.
+                                </p>
+                                <p>
+                                    Разработчик оценивает временные затраты
+                                    по проекту, а аналитики устанавливают
+                                    стоимость продукта.
+                                </p>
                             </div>
                         </div>
-                    }
-                    {
-                        send &&
+                        <div className="col-xl-4 col-md-4 col-lg-4 col-sm-5 col-12">
+                            <div className="card recieve" style={{ transition: 'all linear 0.5s' }}>
+                                <div className="card-title">
+                                    <h4>Получить
+                                        бесплатную
+                                        консультацию
+                                    </h4>
+                                </div>
+                                <div className="card-content">
+                                    В рамках консультации уточним необходимую информацию
+                                    для анализа вашего проекта
+                                </div>
+                                <div className="card-action">
+                                    <button className='btn w-100 btn-light' onClick={handleRecieve}>Получить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                }
+                {
+                    send &&
+                    <div className="col-xl-4 col-md-4 col-lg-4 col-sm-5 col-12">
                         <div className="card send" style={{ transition: 'all linear 0.5s' }}>
                             <div className=" d-none card-minimum">
                                 <div className="card-title">
@@ -148,8 +169,10 @@ export default function Order() {
                                 <button type='submit' className='btn w-100 btn-light' onClick={handleSend}>Отправить</button>
                             </div>
                         </div>
-                    }
-                    {!recieve && !send &&
+                    </div>
+                }
+                {!recieve && !send &&
+                    <div className=" col-xl-4 col-md-4 col-lg-4 col-sm-5 col-12">
                         <div className="card iconCard" style={{ transition: 'all linear 0.5s' }}>
                             <div className="cardHeader text-center">
                                 <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,9 +191,9 @@ export default function Order() {
                                 <button className='btn w-100 btn-light' onClick={() => setRecieve(true)}>Получить</button>
                             </div>
                         </div>
-                    }
+                    </div>
+                }
 
-                </div>
             </div>
         </div>
     )

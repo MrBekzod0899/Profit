@@ -210,23 +210,28 @@
 
 
 @media (max-width:576px) {
+
     .Order .row .col-lg-8{
         color: white;
         padding: 20px 20px 20px 30px;
+        display: none;
     }
-    .Order .row .col-lg-4 .card .card-title{
-        margin: 10px;
-        padding: 10px;
+    .Order .row .cardMinimum8{
+        display: block !important;
+        margin: 0;
+        margin-left: 3%;
+        padding: 30px 10px;
     }
-    .Order .row .col-lg-8 .orderTitle h3{
-        font-size: 27px !important;
-     }
-     .Order .row .col-lg-8 .orderContent p{
-        font-size: 16px;
-        line-height: 20px;
-        margin: 15px 0;
+    .Order .row .cardMinimum8 .orderTitle h3{
+        font-size: 30px !important;
     }
- 
+    .cardMinimum8 .orderContent{
+        font-size: 24px;
+    }
+    .cardMinimum8 .orderContent p{
+        font-size: 20px !important;
+    }
+
     .Order .row .col-lg-4 .card{
         padding: 25px 20px !important;
         box-sizing: border-box;
@@ -234,29 +239,63 @@
         height: 100% !important;
         background-color: #0c0c0c;
         color:white;
-        font-family: 'Gilroy-Light,san-serif';
-        
+        border-radius: 0;
+        font-family: 'Gilroy-Light,san-serif';   
     }
+  
     .Order .row .col-lg-4 .card .card-title h4{
-        font-size: 46px !important;
+        font-size: 32px !important;
         font-weight: 800;
-        line-height: 57px;
+        line-height: 36px;
     }
     .Order .row .col-lg-4 .card .card-content{
-        margin-left: 5%;
         font-size: 22px !important;
     }
     .Order .row .col-lg-4 .card .card-content p{
-        font-size: 24px !important;
+        font-size: 22px !important;
     }
     .Order .row .col-lg-4 .card .card-action{
         margin: 20px 20px;
+        
     }
     .Order .row .col-lg-4 .card .card-action button{
         border-radius:30px;
         padding: 15px 10px;
         font-weight: 600;
         font-size: 18px;
+        margin-top: 50px;
     }
-    
+    .Order .row  .card-minimum{
+        margin-left: 3%;
+        padding-bottom: 10px;
+        padding: 20px;
+        display: block !important;
+        background-color: #0c0c0c;
+        width: 80% !important;
+        color: white;
+    }
+    .card-minimum .card-content{
+        margin-left: 0 !important;
+    }
+
+    .Order .row .iconCard{
+        min-height: 850px;
+        display: flex;    
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .Order .row .iconCard .card-action{
+        position: absolute;
+        bottom: 10px;
+        left: 0%;
+        width: 90%;
+    }
+    .Order .row .iconCard .cardHeader svg{
+        width: 100px  !important;
+        height: 100px !important;
+    }
+    .Order .row .iconCard .card-action button{
+        color: #5fcd72 !important;
+    }    
 }
