@@ -1,6 +1,4 @@
 .Order{
-     border-bottom: 4px dashed #6d609d;
-     border-top: 4px dashed #6d609d;
      padding: 15px 0;
 }
 .Order .row{
@@ -9,22 +7,21 @@
     background-color: #5a4db7;
     border-radius: 20px;
     border: 1px solid #806dc4;
-    width: 100%;
     overflow: hidden; 
 }
 .Order .row .col-lg-8{
     color: white;
-    padding: 30px 30px 30px 50px;
+    padding: 20px 20px 20px 50px;
 }
 .Order .row .col-lg-8 .orderTitle{
     margin-bottom: 20px;
 }
 .Order .row .col-lg-8 .orderTitle h3{
-   font-size: 50px !important;
+   font-size: 45px !important;
 }
 
 .Order .row .col-lg-8 .orderContent{
-    margin: 20px 0;
+    margin: 25px 0;
 }
 .Order .row .col-lg-8 .orderContent p{
     font-size: 26px;
@@ -32,6 +29,7 @@
     font-style: normal;
     line-height: 35px;
     font-weight: 500;
+    margin: 30px 0;
 }
 
 .Order .row .col-lg-4{
@@ -49,17 +47,17 @@
     background-color: #0c0c0c;
     color:white;
     font-family: 'Gilroy-Light,san-serif';
-    font-weight: 900;
+    
 }
 .Order .row .col-lg-4 .card .card-title h4{
     font-size: 40px !important;
+    font-weight: 900;
 }
 .Order .row .col-lg-4 .card .card-content{
     margin: 10px 0;
 }
 .Order .row .col-lg-4 .card .card-content p{
     font-size: 20px !important;
-   
 }
 .Order .row .col-lg-4 .card .card-action{
     margin: 20px 0;
@@ -94,4 +92,171 @@
     border-radius: 30px;
     font-size: 16px;
     margin: 0;
+}
+.Order .row .send .card-action{
+    margin: 5px !important;
+    padding: 0 !important;
+}
+.Order .row .send .card-action:nth-child(4){
+    margin-top: 5px !important;
+    margin-bottom: 40px !important;
+}
+
+
+@media (max-width:992px) {
+    .Order .row .col-lg-8{
+        color: white;
+        padding: 15px 15px 15px 50px;
+    }
+    .Order .row .col-lg-4 .card .card-title{
+        margin: 0;
+    }
+    .Order .row .col-lg-8 .orderTitle h3{
+        font-size: 38px !important;
+     }
+     .Order .row .col-lg-8 .orderContent p{
+        font-size: 22px;
+        line-height: 26px;
+        margin: 20px 0;
+    }
+    .Order .row .col-lg-4 .card{
+        height: 100%;
+        padding: 10px !important;
+        padding-left: 25px !important;
+    }
+   
+    .Order .row .col-lg-4 .card .card-title h4{
+        font-size: 28px !important;
+        line-height: 30px;
+        font-weight: 700;
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        margin: 10px 0;
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        margin: 5px 0;
+    }
+    .Order .row .col-lg-4 .card .card-content p{
+        font-size: 15px !important;
+        line-height: 20px;
+    }
+    .Order .row .col-lg-4 .card .card-action button{
+        border-radius:30px ;
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .Order .row .send{
+        padding: 10px !important;
+        padding-bottom: 20px;
+    }
+    .Order .row .send .card-action input{
+       padding: 10px ;
+    }
+}
+
+@media (max-width:800px) {
+    .Order .row .col-lg-8{
+        color: white;
+        padding: 5px 5px 0px 30px;
+    }
+    .Order .row .col-lg-4 .card .card-title{
+        margin: 0;
+        padding: 0;
+    }
+    .Order .row .col-lg-8 .orderTitle h3{
+        font-size: 25px !important;
+     }
+     .Order .row .col-lg-8 .orderContent p{
+        font-size: 16px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+    .Order .row .col-lg-4 .card{
+        height: 100%;
+        padding: 5px !important;
+        padding-left: 25px !important;
+    }
+   
+    .Order .row .col-lg-4 .card .card-title h4{
+        font-size: 22px !important;
+        line-height: 27px;
+        font-weight: 800;
+        font-family: 'Gilroy-Light';
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        margin: 10px 0;
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        margin: 5px 0;
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        width: 100%;
+    }
+    .Order .row .col-lg-4 .card .card-content p{
+        font-size: 15px !important;
+        line-height: 20px;
+    }
+    .Order .row .col-lg-4 .card .card-action{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .Order .row .col-lg-4 .card .card-action button{
+        border-radius:30px ;
+        padding: 10px 0;
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .Order .row .col-lg-8{
+        color: white;
+        padding: 20px 20px 20px 30px;
+    }
+    .Order .row .col-lg-4 .card .card-title{
+        margin: 10px;
+        padding: 10px;
+    }
+    .Order .row .col-lg-8 .orderTitle h3{
+        font-size: 27px !important;
+     }
+     .Order .row .col-lg-8 .orderContent p{
+        font-size: 16px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+ 
+    .Order .row .col-lg-4 .card{
+        padding: 25px 20px !important;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100% !important;
+        background-color: #0c0c0c;
+        color:white;
+        font-family: 'Gilroy-Light,san-serif';
+        
+    }
+    .Order .row .col-lg-4 .card .card-title h4{
+        font-size: 46px !important;
+        font-weight: 800;
+        line-height: 57px;
+    }
+    .Order .row .col-lg-4 .card .card-content{
+        margin-left: 5%;
+        font-size: 22px !important;
+    }
+    .Order .row .col-lg-4 .card .card-content p{
+        font-size: 24px !important;
+    }
+    .Order .row .col-lg-4 .card .card-action{
+        margin: 20px 20px;
+    }
+    .Order .row .col-lg-4 .card .card-action button{
+        border-radius:30px;
+        padding: 15px 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    
 }

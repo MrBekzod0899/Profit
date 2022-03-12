@@ -27,8 +27,6 @@ body .wrap{
 }
 body .main-content{
   background: linear-gradient(#5A4DB7 70%,#1e1b3f);
-  padding-bottom:60px !important;
-
 }
 body a{
   text-decoration: none;
@@ -36,7 +34,7 @@ body a{
 }
 
 @media (max-width:576px) {
-  body .wrap{
-    border-top: 3px dashed #999;
+  body .main-content{
+    padding-bottom:60px !important;
   }
 }
